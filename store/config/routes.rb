@@ -11,4 +11,14 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # get "/products", to: "products#index"
+  # psot "products", to: "products#create"
+  # get "/products/:id", to: "products#show"
+  
+  # get "/blog/:title", to: "blog#show"
+  # get "/blog/:slug", to: "blog#show"
+
+  resources :products
+  root "products#index"
 end
